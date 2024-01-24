@@ -7,20 +7,18 @@
 body {
     text-align: center;
     min-height: 100vh;
-    background-color: #facab8;
-  }
-
-header{
-    border-bottom: 2px solid black;
-    padding: 10px;
-    background-color: #FFA07A;
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.858) 50%, cyan);
 }
+header{
+    border-bottom: 1px solid white;
+    padding: 10px;
+    background: linear-gradient(100deg, rgba(0, 0, 0, 0.858) 1%, cyan);
+}
+
 
 h1,h2,h3{
-    color: #333;
-}
-p{
-    color: #70747a;
+    color: #fff;
+    text-shadow: black 0.1em 0.1em 0.2em
 }
 
 .sub-title{
@@ -34,27 +32,28 @@ p{
     flex-wrap: wrap;
     margin: 1rem auto;
     padding: 1rem;
-    max-width: 300px;
+    max-width: 400px;
     background-color: #fff;
     border-radius: 1rem;
-    color: #333;
+    color: black
   }
   
 .forms {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100px;
+    width: 125px;
     margin: 0 1rem;
 }
 
 .forms label{
     margin-bottom: 10px;
-    font-size: 0.8rem;
+    font-size: 1rem;
     font-weight: bold;
 }
 
 .forms input{
+    font-size: 1rem;
     margin-bottom: 1rem;
     flex: 1;
     padding: 0.6rem 0.4rem;
@@ -74,12 +73,12 @@ p{
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: 300px;
+    max-width: 400px;
     margin: 1rem auto;
-    padding: 2rem 1rem;
+    padding: 1rem 2rem;
     background-color: #fff;
     border-radius: 1rem;
-    color: #333;
+    color: black;
 }
 
 #multiplication-operations .row {
@@ -90,16 +89,34 @@ p{
     padding: 0.5rem;
     width: 150px;
     text-align: center;
+    font-size: 1rem;
   }
   
   #multiplication-operations .row:last-child {
     border-bottom: 1px solid #ccc;
   }
+
+  .result {
+    margin-left:5px;
+  }
+  
+  #seta {
+    padding: 10px;
+    box-shadow: 2px -2px 0 1px #000 inset;
+    border: solid transparent;
+    border-width: 0 0 2px 2px;
+    transform: rotate(135deg);
+  }
+
   
 
 footer{
     text-align: center;
     font-weight: bold;
     margin: 20px 0 50px;
-    
+}
+
+footer p {
+    color: #fff;
+
 }
